@@ -22,8 +22,8 @@
             </div>
         </header>
         
-        <nav class="menu">
-            <ul class="menu-item">
+        <nav id="nav" class="menu">
+            <ul class="menu-item" role="menu">
                 <li><a href="#">Home</a></li>
                 <li class="bullet">•</li>
                 <li><a href="#sobre">Sobre nós</a></li>
@@ -31,12 +31,14 @@
                 <li><a href="#servicos">Serviços</a></li>
             </ul>
             <img class="logo" src="img/logo-kazaviva.png" alt="Kaza Viva">
-            <ul class="menu-item">
+            <ul class="menu-item" role="menu">
                 <li><a href="#">Faça parte da nossa equipe</a></li>
                 <li class="bullet">•</li>
                 <li><a href="#contato">Contato</a></li>
             </ul>
-
+            <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu-item" aria-expanded="false">
+                <span id="hamburger"></span>
+            </button>
         </nav>
             
         <main class="intro">
@@ -222,6 +224,6 @@
                 </div>
             </div>
         </footer>
-        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="./script/main.js"></script>
     </body>
 </html>
